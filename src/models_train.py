@@ -1,3 +1,4 @@
+'''简单的特征提取，暂时用中文注释和提示以便于阅读，路径与文件名均为测试用,注：测试文本量过少会导致报错'''
 import joblib
 import os
 from sklearn.model_selection import train_test_split
@@ -24,7 +25,7 @@ def main():
     print("正在划分训练集和测试集...")
     # 按9:1划分训练集和测试集，固定随机种子保证可复现
     X_train, X_test, y_train, y_test = train_test_split(
-        X_tfidf, y, test_size=0.2, random_state=42#, stratify=y
+        X_tfidf, y, test_size=0.1, random_state=42, stratify=y
     )
     
     print("正在定义逻辑回归模型（单个基础模型）...")
