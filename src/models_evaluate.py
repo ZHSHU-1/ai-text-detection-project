@@ -1,3 +1,4 @@
+'''简单的模型评估，并生成可视化图案，暂时用中文注释和提示以便于阅读，路径与文件名均为测试用'''
 import joblib
 from sklearn.metrics import (
     accuracy_score, precision_score, recall_score, f1_score,
